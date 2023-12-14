@@ -11,6 +11,30 @@ import streamlit as st
 from huggingface_hub import login
 #login(token="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")
 
+
+st.set_page_config(page_title="AUTOPROMPT!", page_icon=":money:")
+
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {
+    visibility: hidden;
+}
+footer:after {
+    content: 'made by nBrain';
+    visibility: visible;
+    display: block;
+    position: relative;
+    /* background-color: red; */
+    padding: 5px;
+    top: 2px;
+}
+</style>
+"""
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 def MainQuery(input):
 
     def get_embedding(text, model_id, hf_token):
