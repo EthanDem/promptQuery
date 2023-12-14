@@ -12,5 +12,5 @@ if st.button("Query"):
     data = {
         "question": q
     }
-    response = requests.post(url, data=q)
+    response = requests.post(url, data=data)
     st.write(response.json())
