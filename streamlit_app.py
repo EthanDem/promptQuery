@@ -1,6 +1,6 @@
 import requests
 import json
-
+import streamlit as st
 
 
 url = 'https://test-auto-prompt-select.icecube1513.repl.co/request'
