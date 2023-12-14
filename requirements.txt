@@ -1,6 +1,1 @@
-datasets
-torch
-sentence-transformers
-requests
-numpy
-ast
+
